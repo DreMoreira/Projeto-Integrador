@@ -1,0 +1,86 @@
+
+<ion-content class="ion-padding">
+  <form #form="ngForm" (ngSubmit)="register(form)">
+    <ion-grid>
+      <ion-row  class="ion-justify-content-center">
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div text-center>
+            <h3>Crie sua Conta!</h3>
+          </div>
+          <div >
+            <ion-item>
+              <ion-input  name="name" type="text" placeholder="Nome" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="sobrenome" type="text" placeholder="Sobrenome" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="email" type="email" placeholder="E-mail" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="password" type="password" placeholder="Senha" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="confirm" type="password" placeholder="Digite sua senha novamente" ngModel required></ion-input>
+            </ion-item>
+          </div>
+          <div>
+            <h4>Endereço</h4>
+            <ion-item>
+              <ion-input name="endereco" type="text" placeholder="Endereço" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="cidade" type="text" placeholder="Cidade" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-select placeholder="Estado">
+                <ion-select-option value="es">ES</ion-select-option>
+                <ion-select-option value="sp">SP</ion-select-option>
+                <ion-select-option value="rj">RJ</ion-select-option>
+                <ion-select-option value="mg">MG</ion-select-option>
+                <ion-select-option value="go">GO</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-input name="cep" type="text" placeholder="Cep" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-select placeholder="País">
+                <ion-select-option value="brasil">Brasil</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </div>
+          <div>
+            <h4>Informação Adicional</h4>
+            <ion-item>
+              <ion-label position="floating">Data de Nascimento</ion-label>
+              <ion-input name="data" type="date" placeholder="Data Nascimento" ngModel required></ion-input>
+            </ion-item>
+          </div>
+          <div>
+            <h4>Contatos para emergência</h4>
+            <ion-item>
+              <ion-input name="tel1" type="tel" placeholder="Contato 1" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="tel2" type="tel" placeholder="Contato 2" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="tel3" type="tel" placeholder="Contato 3"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="tel4" type="tel" placeholder="Contato 4"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="tel5" type="tel" placeholder="Contato 5"></ion-input>
+            </ion-item>
+          </div>
+          <div >
+            <ion-button routerLink='/' id="btnSalvar" size="large" type="submit" [disabled]="form.invalid" expand="block">Salvar</ion-button>
+            <ion-button routerLink='/' size="large"  expand="block">Cancelar</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

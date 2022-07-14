@@ -1,0 +1,43 @@
+
+.icon-home {
+    --background-focused: #4674d8;
+    --color-selected: #4674d8;
+    color: #1f4eb6;
+}
+
+.icon-alert {
+    --background-focused: #e9df58;
+    --color-selected: #e9df58;
+    color: #ebdc12;
+}
+.icon-cadastro {
+    --background-focused: #68e468;
+    --color-selected: #68e468;
+    color: #16e416;
+    
+}
+
+
+ion-header {
+    display: inline-block;
+    align-content: center;
+}
+
+.texto{
+    display: inline-block;
+    font-size: 2em;
+    margin-bottom: 0.5%;
+}
+
+.title {
+    margin: 1%;
+    display: inline-block;
+}
+
+
+.imgIcon {
+    
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}

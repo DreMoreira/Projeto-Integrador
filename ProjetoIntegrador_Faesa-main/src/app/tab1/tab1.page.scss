@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.texto{
+    font-size: 2.5em;
+    margin: 1% 2% 0% 3%;
+}
+
+.title {
+    margin: 1% 2% 0% 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.imgAlert {
+    width: 20%;
+    height: 10%;
+    margin-bottom: 5%;
+}
+
+.botao-perigo {
+    width: 50%;
+    height: 15vh;
+}
+
+.imgIcon {
+    
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}

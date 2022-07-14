@@ -1,0 +1,32 @@
+
+<ion-content class="ion-padding">
+  <form #form="ngForm" (ngSubmit)="conect(form)">
+    <ion-grid>
+      <ion-row  class="ion-justify-content-center">
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div class="ion-text-center">
+            <h3>Olá, User</h3>
+          </div>
+          <section >
+            <header>Precione para fazer uma ligação rápida para o(s) número(s) cadastrado(s)</header>
+            <ion-button size="large" color="success" expand="block"><ion-icon name="call-outline"></ion-icon> Ligação</ion-button>
+          </section>
+          <section >
+            <header>Precione em caso de suspeita</header>
+            <ion-button size="large" color="warning" expand="block"><ion-icon name="warning-outline"></ion-icon> Alerta</ion-button>
+          </section>
+          <section >
+            <header>Precione em caso de urgência</header>
+            <ion-button size="large" color="danger" expand="block"><ion-icon name="alert-circle-outline"></ion-icon>
+               Perigo</ion-button>
+          </section>
+          <section >
+            <ion-button routerLink='/' size="large"  expand="block"><ion-icon name="log-out-outline"></ion-icon>
+               Sair</ion-button>
+          </section>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+</ion-content>
